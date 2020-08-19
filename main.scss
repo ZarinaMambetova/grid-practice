@@ -1,0 +1,90 @@
+@import "./layout/form.scss";
+@import "./layout/button.scss";
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 200;
+  margin-top: 0;
+  span {
+    font-weight: 900;
+  }
+}
+
+p {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+a,
+input,
+textarea {
+  font-size: 16.57px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-align: center;
+  display: inline-block;
+  max-width: 150px;
+}
+
+.grid-item_bg {
+  background-image: url(./img/first.jpg);
+}
+
+.grid-item_gray {
+  background-color: #f3f3f3;
+}
+
+.grid-item_blue {
+  background-image: url(./img/3.jpg);
+}
+
+.grid-item {
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid-item_beige {
+  background-image: url(./img/12.jpg);
+}
+
+.grid-item_black {
+  background-image: url(./img/4.jpg);
+}
+
+.grid-item_human {
+  background-image: url(./img/5.jpg);
+}
+.grid-item_green {
+  background-image: url(./img/6.jpg);
+}
+
+.grid-item_blue,
+.grid-item_green,
+.grid-item_human,
+.grid-item_black {
+  color: #fff;
+}

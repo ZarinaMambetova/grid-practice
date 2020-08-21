@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-areas: "a a a a a a b b b"
+                      "c c c c d d d d d"
+                      "c c c c e e e e e"
+                      "f f f g g g g g g";
+}
+
+.grid-item_bg {
+  grid-area: a;
+}
+
+.grid-item_gray {
+  grid-area: b;
+}
+
+.grid-item_blue {
+  grid-area: c;
+}
+
+.grid-item_beige {
+  grid-area: d;
+}
+
+.grid-item_black {
+  grid-area: e;
+}
+.grid-item_human {
+  grid-area: f;
+}
+
+.grid-item_green {
+  grid-area: g;
+}

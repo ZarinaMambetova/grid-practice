@@ -2,6 +2,8 @@
 @import "./layout/menu-ham.scss";
 @import "./layout/socials.scss";
 @import "./layout/button.scss";
+@import "./layout/logo.scss";
+@import "./layout/grid.scss";
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -24,6 +26,8 @@ h3,
 h4 {
   font-weight: 200;
   margin-top: 0;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
   span {
     font-weight: 900;
   }
@@ -36,7 +40,7 @@ ul > li {
 p {
   font-size: 15px;
   line-height: 28px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 a,
@@ -47,6 +51,7 @@ textarea {
 
 .grid-item_bg {
   background-image: url(./img/first.jpg);
+  padding: 0;
 }
 
 .grid-item_gray {
@@ -60,6 +65,8 @@ textarea {
 .grid-item {
   background-size: cover;
   background-position: center center;
+  padding: 60px 27px 73px 47px;
+  background-repeat: no-repeat;
 }
 
 .grid-item_beige {
@@ -72,9 +79,15 @@ textarea {
 
 .grid-item_human {
   background-image: url(./img/5.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 .grid-item_green {
   background-image: url(./img/6.jpg);
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
 }
 
 .grid-item_blue,
@@ -82,4 +95,12 @@ textarea {
 .grid-item_human,
 .grid-item_black {
   color: #fff;
+}
+
+.grid-item_blue-part {
+  margin-bottom: 70px;
+}
+
+.span {
+  display: block;
 }

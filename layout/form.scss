@@ -7,6 +7,7 @@ form {
 
 textarea {
   width: 100%;
+  min-width: 125px;
 }
 
 input, textarea {
@@ -15,7 +16,7 @@ input, textarea {
   border-radius: 10px;
   margin-bottom: 12px;
   color: #fff;
-  padding: 10px 15px;
+  padding: 18px 15px;
   outline: 0;
 }
 

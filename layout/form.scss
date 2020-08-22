@@ -7,7 +7,7 @@ form {
 
 textarea {
   width: 100%;
-  min-width: 125px;
+  min-height: 125px;
 }
 
 input, textarea {
@@ -23,7 +23,12 @@ input, textarea {
 input {
   width: 43%;
   justify-content: space-between;
+  @media (max-width:560px) {
+    width: 100%;
+  }
+  
 }
+//меняем цвет placeholder
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #fff; }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #fff; }
 input::-ms-input-placeholder, textarea::-ms-input-placeholder { color: #fff; }

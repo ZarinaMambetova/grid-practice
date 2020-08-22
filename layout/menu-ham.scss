@@ -2,16 +2,20 @@
   opacity: 0;
 }
 .hamburger-menu {
-  position: relative; 
+  position: relative;
+  margin-bottom: 50px;
+  @media (max-width: 1080px) {
+    margin-bottom: 30px;
+  }
 }
 
 /* стилизуем кнопку */
 .menu__btn {
   display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
+  align-items: center; /* центрируем содержимое кнопки */
   position: absolute;
   bottom: 18px;
- 
+
   width: 33px;
   height: 33px;
   cursor: pointer;

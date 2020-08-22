@@ -27,10 +27,22 @@ h4 {
   font-weight: 200;
   margin-top: 0;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 55px;
   span {
     font-weight: 900;
   }
+  @media (max-width: 1080px) {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  @media (max-width: 830px) {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+}
+
+h4 {
+  margin-bottom: 15px;
 }
 
 ul > li {
@@ -41,17 +53,27 @@ p {
   font-size: 15px;
   line-height: 28px;
   margin: 0;
+  @media (max-width: 1080px) {
+    font-size: 13px;
+    line-height: 22px;
+  }
 }
 
 a,
 input,
 textarea {
   font-size: 16.57px;
+  @media (max-width: 1080px) {
+    font-size: 13px;
+  }
 }
 
 .grid-item_bg {
   background-image: url(./img/first.jpg);
   padding: 0;
+  @media (max-width: 740px) {
+    display: none;
+  }
 }
 
 .grid-item_gray {
@@ -67,14 +89,23 @@ textarea {
   background-position: center center;
   padding: 60px 27px 73px 47px;
   background-repeat: no-repeat;
+  @media (max-width: 1080px) {
+    padding: 40px 30px;
+  }
 }
 
 .grid-item_beige {
   background-image: url(./img/12.jpg);
+  @media (max-width: 740px) {
+    text-align: center;
+  }
 }
 
 .grid-item_black {
   background-image: url(./img/4.jpg);
+  @media (max-width: 740px) {
+    text-align: center;
+  }
 }
 
 .grid-item_human {
@@ -82,12 +113,28 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+  min-height: 580px;
+  @media (max-width: 1080px) {
+    min-height: 480px;
+  }
+  @media (max-width: 740px) {
+    min-height: inherit;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .grid-item_green {
   background-image: url(./img/6.jpg);
   display: flex;
   align-content: space-between;
   flex-wrap: wrap;
+  min-height: 480px;
+  & > div {
+    width: 100%;
+  }
+  @media (max-width: 740px) {
+    text-align: center;
+  }
 }
 
 .grid-item_blue,
@@ -99,8 +146,15 @@ textarea {
 
 .grid-item_blue-part {
   margin-bottom: 70px;
+  @media (max-width: 1080px) {
+    margin-bottom: 30px;
+  }
 }
 
 .span {
-  display: block;
+  display: inline-block;
+}
+
+.grid-item_human-logo {
+  width: 100%;
 }

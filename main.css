@@ -161,13 +161,13 @@ input::placeholder, textarea::placeholder {
     transition: 0.3s; }
 
 .social__icon-fb {
-  background-image: url(./../img/icons/Facebook.svg); }
+  background-image: url(./img/icons/Facebook.svg); }
 
 .social__icon-dr {
-  background-image: url(./../img/icons/Dribbble.svg); }
+  background-image: url(./img/icons/Dribbble.svg); }
 
 .social__icon-tw {
-  background-image: url(./../img/icons/Twitter.svg); }
+  background-image: url(./img/icons/Twitter.svg); }
 
 .button {
   color: #fff;
@@ -192,7 +192,7 @@ input::placeholder, textarea::placeholder {
   display: block;
   width: 90px;
   height: 90px;
-  background-image: url(./../img/logo.png);
+  background-image: url(./img/logo.png);
   background-repeat: no-repeat;
   margin-bottom: 25px;
   background-size: cover; }
